@@ -1,9 +1,25 @@
 
 body{
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .superhero{
-  background-color: rgb(139, 47, 181);
-  border: 2px solid green;
+  background-color: cyan;
+  border: 3px solid rgb(11, 101, 11);
+  min-width: 300px;
+
+}
+
+.hero-container{
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }

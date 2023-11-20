@@ -14,7 +14,7 @@ function Greeting({ greeting, number }) {
 
   return (
     <div>
-      <h3>{!greeting ? "Have a great day" : greeting}</h3>
+      <h1>{!greeting ? "Have a great day" : greeting}</h1>
     </div>
   );
 }

@@ -1,20 +1,17 @@
 function Superhero({ name, image, group }) {
-  
   return (
     <div
       id="superhero"
       className="superhero"
       style={{
         color: "red",
-        backgroundColor: "Cyan",
         margin: "10px",
         padding: "10px",
       }}
     >
-      <p>{name}</p>
-      <img height={300} width={"auto"} src={image} />
-
+      <h3>{name}</h3>
       <p>{group}</p>
+      <img height={200} width={"auto"} src={image} />
     </div>
   );
 }
