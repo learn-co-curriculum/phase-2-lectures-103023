@@ -5,14 +5,23 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
-.superhero{
+.App{
+  height: 100vh;
+  width: 100vw;
+}
+
+.superhero-cyan{
   background-color: cyan;
   border: 3px solid rgb(11, 101, 11);
   min-width: 300px;
+}
 
+.superhero-purple{
+  background-color: rgb(118, 0, 154);
+  border: 3px solid rgb(11, 101, 11);
+  min-width: 300px;
 }
 
 .hero-container{

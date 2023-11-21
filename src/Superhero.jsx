@@ -1,8 +1,17 @@
+import { useState } from "react";
+
 function Superhero({ name, image, group }) {
+  const [isCyan, setIsCyan] = useState(true);
+
+  function handleClick() {
+    setIsCyan(!isCyan);
+  }
+
   return (
     <div
+      onClick={handleClick}
       id="superhero"
-      className="superhero"
+      className={isCyan ? "superhero-cyan" : "superhero-purple"}
       style={{
         color: "red",
         margin: "10px",
