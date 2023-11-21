@@ -5,6 +5,7 @@ function Superhero({ name, image, group }) {
 
   function handleClick() {
     setIsCyan(!isCyan);
+    console.log(name, "clicked");
   }
 
   return (
@@ -13,14 +14,13 @@ function Superhero({ name, image, group }) {
       id="superhero"
       className={isCyan ? "superhero-cyan" : "superhero-purple"}
       style={{
-        color: "red",
         margin: "10px",
         padding: "10px",
       }}
     >
       <h3>{name}</h3>
       <p>{group}</p>
-      <img height={200} width={"auto"} src={image} />
+      <img height={250} width={"auto"} src={image} />
     </div>
   );
 }

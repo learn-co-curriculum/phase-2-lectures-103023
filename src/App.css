@@ -1,4 +1,13 @@
 
+/* 
+Hex	    RGB          - Color
+#4c69f6	(76,105,246) - blue
+#4c94f6	(76,148,246) - light blue
+#f6db35	(246,219,53) - yellow
+#ffc510	(255,197,16) - light yellow
+#ee5454	(238,84,84)  - red
+*/
+
 body{
   text-align: center;
   display: flex;
@@ -8,27 +17,43 @@ body{
 }
 
 .App{
-  height: 100vh;
+  font-family: 'comic sans ms';
+  min-height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 
+.heading{
+  font-size: 3.5rem;
+  font-style: italic;
+  color: rgb(246,219,53);
+  text-shadow: 4px 3px 1px rgb(76, 105, 246);
+  -webkit-text-stroke: .5px rgb(76, 148, 246);
+}
+
 .superhero-cyan{
-  background-color: cyan;
-  border: 3px solid rgb(11, 101, 11);
+  background-color: rgb(76, 148, 246);
+  border: 3px solid rgb(255, 197, 16);
   min-width: 300px;
+  color: rgb(246, 219, 53);
 }
 
 .superhero-purple{
   background-color: rgb(118, 0, 154);
-  border: 3px solid rgb(11, 101, 11);
+  border: 3px solid rgb(238, 84, 84);
+  color: rgb(238, 84, 84);
   min-width: 300px;
 }
 
 .hero-container{
-  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.hero-container img{
+  max-width: 250px;
+  max-height: auto;
 }
