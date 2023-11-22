@@ -1,11 +1,12 @@
 import { useState } from "react";
 
-function Superhero({ name, image, group }) {
+function Superhero({ name, image, group, onSelect }) {
   const [isCyan, setIsCyan] = useState(true);
 
   function handleClick() {
     setIsCyan(!isCyan);
     console.log(name, "clicked");
+    onSelect(name);
   }
 
   return (
@@ -21,6 +22,8 @@ function Superhero({ name, image, group }) {
       <h3>{name}</h3>
       <p>{group}</p>
       <img height={250} width={"auto"} src={image} />
+
+      {/* <p>{selectedHero}</p> */}
     </div>
   );
 }
