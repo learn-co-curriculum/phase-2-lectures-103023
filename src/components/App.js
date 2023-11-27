@@ -10,18 +10,18 @@ function App() {
   const [isClicked, setIsClicked] = useState(false);
 
   useEffect(() => {
-    console.log("I am running after the page has finished rendering");
+    console.log("I am runnig after the rendering of the application");
   }, []);
 
   useEffect(() => {
     console.log(
       "I am depended on the isClicked state. I run every time the state updates!"
     );
-  }, []);
+  }, [isClicked]);
 
   return (
     <div className="App">
-      <button>Click me!</button>
+      <button onClick={() => setIsClicked(!isClicked)}>Click me!</button>
       <Greeting greeting={greeting} />
       <SuperheroList superheroes={superheroes} />
     </div>

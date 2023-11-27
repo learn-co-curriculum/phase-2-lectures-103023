@@ -1,12 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Superhero from "./Superhero";
 import Search from "./Search";
 import NewSuperHeroForm from "./NewSuperHeroForm";
 
-function SuperheroList({ superheroes }) {
+function SuperheroList() {
   const [selectedHero, setSelectedHero] = useState("none");
 
   const [searchTerm, setSearchTerm] = useState("");
+
+  const [superheroes, setSuperheroes] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:4000/superheroes")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setSuperheroes(data);
+      });
+  }, []);
 
   function handleSelectHero(name) {
     setSelectedHero(name);
@@ -14,6 +25,10 @@ function SuperheroList({ superheroes }) {
 
   function onSearch(term) {
     setSearchTerm(term);
+  }
+
+  function onAddSuperhero(newSuperHero) {
+    setSuperheroes([...superheroes, newSuperHero]);
   }
 
   const filteredHeroes = superheroes.filter((superhero) =>
@@ -37,6 +52,7 @@ function SuperheroList({ superheroes }) {
     <div>
       <h3>Selected Hero: {selectedHero}</h3>
       <Search onSearch={onSearch} searchTerm={searchTerm} />
+      <NewSuperHeroForm onAddSuperhero={onAddSuperhero} />
       <div className="hero-container">{renderHeroes}</div>
     </div>
   );

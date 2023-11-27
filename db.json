@@ -1,31 +1,52 @@
 {
   "superheroes": [
     {
+      "id": 1,
       "name": "Batman",
       "image": "https://digitalheroes.com/cdn/shop/products/STL153767_1024x1024.jpg?v=1605814705",
       "group": "DC Comics"
     },
     {
+      "id": 2,
       "name": "Superman",
       "image": "https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png",
       "group": "DC Comics"
     },
     {
+      "id": 3,
       "name": "Wonder Woman",
       "image": "https://static.tvtropes.org/pmwiki/pub/images/ww_1.png",
       "group": "DC Comics"
     },
-
     {
+      "id": 4,
       "name": "Ant Man",
       "image": "https://i.pinimg.com/564x/93/59/f6/9359f6fbd7419b59147a732b39302c85.jpg",
       "group": "Marvel"
     },
-
     {
+      "id": 5,
       "name": "Omni Man",
       "image": "https://media.distractify.com/brand-img/xqcM5sjK-/0x0/omniman-1616790676506.jpg",
       "group": "Marvel"
+    },
+    {
+      "name": "Spiderman",
+      "image": "https://upload.wikimedia.org/wikipedia/en/2/21/Web_of_Spider-Man_Vol_1_129-1.png",
+      "group": "Marvel",
+      "id": 6
+    },
+    {
+      "name": "Doctor Strange",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/clean-1650906911.jpeg?crop=0.438xw:1.00xh;0.394xw,0&resize=640:*",
+      "group": "Marvel",
+      "id": 7
+    },
+    {
+      "name": "Power Puff girls",
+      "image": "https://m.media-amazon.com/images/I/81LH2NwVvjL._AC_UF1000,1000_QL80_.jpg",
+      "group": "CN",
+      "id": 8
     }
   ]
 }
