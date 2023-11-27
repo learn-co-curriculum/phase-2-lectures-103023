@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Superhero from "./Superhero";
 import Search from "./Search";
+import NewSuperHeroForm from "./NewSuperHeroForm";
 
 function SuperheroList({ superheroes }) {
   const [selectedHero, setSelectedHero] = useState("none");
